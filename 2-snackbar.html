@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>snackbar</title>
+  <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-0a992e54.css">
+</head>
+<body>
+
+    <form class="form">
+        <label class="delay-label" for="delay">Delay (ms)</label>
+        <input class="delay-input" type="number" name="delay" required />
+
+        <fieldset>
+            <legend>State</legend>
+            <div class="state-container">
+                <input class="state-input" id="state-ful" type="radio" name="state" value="fulfilled" required />
+                <label class="state-label-1" for="state-ful">Fulfilled</label>
+                <input class="state-input" id="state-rej" type="radio" name="state" value="rejected" required />
+                <label class="state-label-2" for="state-rej">Rejected</label>
+            </div>
+        </fieldset>
+
+        <button class="submit-btn" type="submit">Create notification</button>
+    </form>
+
+    
+</body>
+</html>
