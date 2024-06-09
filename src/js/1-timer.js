@@ -14,6 +14,8 @@ const clockfaceSeconds = document.querySelector('[data-seconds]');
 const startBtn = document.querySelector('button[data-start]');
 startBtn.disabled = true;
 
+let userSelectedDate = null;
+
 const options = {
     enableTime: true,
     time_24hr: true,
@@ -39,7 +41,6 @@ const options = {
         startBtn.disabled = false;
     },
 };
-let userSelectedDate = null;
 
 class Timer {
     constructor() {
